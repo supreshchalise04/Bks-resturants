@@ -1,0 +1,80 @@
+.coupon {
+    border: 5px dotted #bbb; /* Dotted border */
+    width: 80%;
+    border-radius: 15px; /* Rounded border */
+    margin: 0 auto; /* Center the coupon */
+    max-width: 600px;
+  }
+  
+  .container {
+    padding: 2px 16px;
+    background-color: #f1f1f1;
+  }
+  .coupon img{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+  }
+  .promo {
+    background: #ccc;
+    padding: 3px;
+  }
+  
+  .expire {
+    color: red;
+  }.Bks{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .coflex{
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 5px;
+  }
+  @media screen and (max-width: 667px) {
+    .coupon {
+      width: 98%;
+      border-radius: 0; /* Remove rounded border */
+      margin: 0; /* Remove centering */
+      max-width: none; /* Remove max-width */
+      margin-bottom: 10px;
+      
+    }
+  
+    .container {
+      padding: 5px;
+    }
+  .Bks{
+    font-size: 50px;
+    font-weight: 700;
+  }
+    .coupon img {
+      height: 250px;
+      width: 250px;
+    }
+  
+    .promo {
+      padding: 5px;
+    }
+  
+    .expire {
+      color: red;
+    }
+  
+    .Bks {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .coflex {
+      margin-top: 5px;
+      /* Change to block display */
+      margin-bottom: 20px;
+      flex-direction: column;
+    }
+  }

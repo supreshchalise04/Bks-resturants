@@ -1,0 +1,168 @@
+.dishes {
+    background-color: rgb(56, 52, 52);
+    color: white;
+    text-align: center;
+}
+
+.dishes h1 {
+    padding: 15px;
+}
+
+.dishes h3 {
+    padding-top: -5px;
+    padding-bottom: 10px;
+}
+
+.dishes table {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.dishes table li {
+    text-align: left;
+    padding: 10px;
+    padding-left: 55px;
+    list-style-type: none;
+}
+
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.book-a-table {
+    text-align: center;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding: 10px;
+    text-align: left;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.food-order-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.total-cost {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+.dishes {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    td {
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,132 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-image: url(/about.jpg);
+}
+
+.book-a-table,
+.food-order-section,
+.cart-section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-a-table h1,
+.food-order-section,
+.cart-section h2 {
+    margin-top: 0;
+}
+
+.book-a-table form,
+.food-order-section form {
+    margin-top: 2rem;
+}
+
+.book-a-table table,
+.food-order-section form {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.book-a-table th,
+.book-a-table td,
+.food-order-section label,
+.food-order-section select,
+.food-order-section input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.book-a-table th,
+.book-a-table td {
+    text-align: left;
+}
+
+.food-order-section select,
+.food-order-section input {
+    width: 100%;
+}
+
+.food-order-section button,
+.cart-section button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.food-order-section button:hover {
+    background-color: #45a049;
+}
+
+.thank-you-message {
+    background-color: #dff0d8;
+    border: 1px solid #3c763d;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+    /* hide the message initially */
+}
+
+.thank-you-message h2 {
+    color: #3c763d;
+    margin-top: 0;
+}
+
+.thank-you-message p {
+    color: #000;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .book-a-table,
+    .food-order-section,
+    .cart-section {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    #food-item {
+        width: 100%;
+    }
+
+    #quantity {
+        width: 100%;
+    }
+
+    #add-to-cart-btn {
+        width: 100%;
+    }
+
+    #cart-items {
+        width: 100%;
+    }
+
+    #checkout-btn {
+        width: 100%;
+    }
+}

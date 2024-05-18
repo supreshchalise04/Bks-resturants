@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Long+Cang&family=Merriweather:ital@1&family=Montserrat:ital@1&family=Noto+Serif:wght@300&family=Roboto:wght@100;300;700&display=swap');
+
+
+
+
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+  --white: #ddd;
+  --blackred: #230202;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+
+  transition: all .2s linear;
+
+}
+
+
+
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: var(--light-color);
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: var(--green);
+  border-radius: .5rem;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--green);
+}
+
+.navbar {
+  padding-left: 35%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar .icons {
+
+  cursor: pointer;
+
+}
+
+header .icons a,
+header .icons i {
+  cursor: pointer;
+  margin-left: .5rem;
+  height: 4.5rem;
+  list-style: 4.5rem;
+  width: 4.5rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: var(--black);
+  padding-top: 2.1rem;
+
+
+}
+
+
+.descani {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e2e7e2;
+
+}
+
+.main {
+  background-color: #230202;
+}
+
+.ani {
+
+
+  height: 520px;
+  width: 50%;
+  background-color: white;
+  padding: 20px 0 15px;
+  margin-top: 10px;
+  border-radius: .5rem;
+  margin-bottom: 20px;
+
+}
+
+.flex-container {
+  display: flex;
+  background-color: black;
+}
+
+.flex-container .image {
+  background-color: black;
+
+
+  font-size: 30px;
+  width: 50%;
+  height: 700px;
+}
+
+.flex-container .image img {
+  padding-left: 20px;
+  height: 700px;
+  width: 700px;
+}
+
+.flex-container .text {
+  background-color: black;
+
+  font-size: 30px;
+  width: 40%;
+  color: var(--white);
+}
+
+.text h2 {
+  padding-top: 30px;
+  text-align: center;
+
+
+}
+
+.text .food,
+.red,
+.rest {
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+.text .menu {
+  background-color: orange;
+  width: 100px;
+  border-radius: .5rem;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 30%;
+}
+
+.text .menu:hover {
+  background-color: var(--green);
+  color: #ddd;
+}
+
+.des {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 30px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  background-color: #fff;
+  padding-bottom: 30px;
+  color: var(--light-color);
+}
+
+/*use for below  three boxes*/
+.descriptionsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e2e7e2;
+
+}
+
+/*css for box*/
+.box {
+
+  height: 520px;
+  width: 23%;
+  background-color: white;
+  padding: 20px 0 15px;
+  margin-top: 10px;
+  border-radius: .5rem;
+  margin-bottom: 20px;
+}
+
+/*decoration for image use in box*/
+.box-image {
+  height: 300px;
+  background-size: cover;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box-content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*decoration for h2  and link tag use in box*/
+.box-content h2 {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box-content a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+.box-content p {
+  font-size: 20px;
+  color: var(--light-color);
+  text-align: center;
+}
+
+/*image use below box */
+.over {
+  background-image: url(/images/1.png);
+  width: 100%;
+  padding-top: 10px;
+  height: 700px;
+  background-size: cover;
+  margin-top: 10px;
+}
+
+/*editing box use over image */
+.boximage {
+  float: right;
+  padding-top: 10%;
+  margin-right: 10%;
+  height: 300px;
+  width: 23%;
+  background-color: white;
+  padding: 20px 0 15px;
+  margin-top: 10px;
+  border-radius: .5rem;
+  text-align: center;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Barlow', sans-serif;
+
+}
+
+/*editing button use in box over image */
+.input {
+  background-color: orange;
+  width: 100px;
+  border-radius: .5rem;
+  height: 30px;
+  cursor: pointer;
+  margin-top: 30px;
+
+}
+
+/*footer editing */
+
+.Footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: var(--light-color);
+  border-top: 5px solid var(--white);
+}
+
+/*css for box*/
+.fobox {
+
+  height: 250px;
+  width: 25%;
+  background-color: var(--light-color);
+  padding: 20px 0 15px;
+  margin-top: 10px;
+  border-radius: .5rem;
+
+}
+
+/*decoration for image use in box*/
+
+
+.box-contents {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.box-contents ul {
+  text-align: center;
+}
+
+.box-contents li {
+  list-style: none;
+}
+
+.box-contents li a {
+  text-decoration: var(--black);
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*decoration for h3  and link tag */
+.box-contents h3 {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box-contents h5 {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--white);
+}
+
+.box-contents i {
+  margin-left: 30px;
+  width: 30px;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.box-contents i:hover {
+  background-color: var(--blackred);
+  color: var(--light-color);
+  border-radius: 20%;
+  width: 40px;
+}
+
+.box-contents a {
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+.box-contents p {
+  font-size: 20px;
+
+  text-align: center;
+  color: var(--white);
+}
+
+.copyright {
+  border-top: 5px solid var(--white);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: var(--blackred);
+  color: var(--white);
+}
+
+.copyright i {
+  padding-top: 10px;
+}
+
+/*about us**/
+
+.text {
+  text-align: center;
+
+
+}
+
+.text h2 {
+
+  font-family: 'Satisfy', cursive;
+}
+
+.text h5 {
+  font-family: 'Palanquin', sans-serif;
+}
+
+.flex-containers {
+  display: flex;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 400px;
+
+
+}
+
+.flex-containers .chef1,
+.chef2,
+.chef3,
+.chef4,
+.chef5 {
+  background-color: #ddd;
+  margin-left: 10px;
+  width: 20%;
+  height: 350px;
+  margin-right: 10px;
+  border-radius: 10px;
+
+
+
+}
+
+.chef1 img,
+.chef2 img,
+.chef4 img,
+.chef5 img {
+  border-radius: 50%;
+  width: 70%;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.chef3 img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.name {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+.iconschef {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+
+}
+
+.iconschef a {
+  color: var(--blackred);
+}
+
+/*about us*/
+.flexresturants {
+
+  display: flex;
+  margin-top: 20px;
+  border-radius: 5px;
+  height: 800px;
+  background-color: var(--white);
+  width: 100%;
+
+}
+
+/*css for box 1 filled by 4 immage */
+.imgres {
+  background-color: var(--white);
+  margin-left: 10px;
+  width: 50%;
+  height: 780px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/*css for text and content used in it */
+.textandexp {
+  width: 50%;
+  margin-top: 10px;
+  height: 820px;
+  color: var(--blackred);
+}
+
+.img {
+  display: flex;
+  flex-direction: row;
+}
+
+.textandexp .first {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Palanquin', sans-serif;
+  padding-top: 30px;
+
+}
+
+.second {
+  padding-top: 30px;
+  font-family: 'Palanquin', sans-serif;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.textandexp h2 {
+  text-align: center;
+
+}
+
+.textandexp h3 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Satisfy', cursive;
+}
+
+.readmore {
+  background-color: orange;
+  color: var(--blackred);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 50%;
+}
+
+/* css for icons and text used in box 2 in about section */
+.row {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 20px;
+  margin-left: 40%;
+
+}
+
+.row h3,
+p {
+  padding-left: 10px;
+  padding-top: 0;
+}
+
+/*resturants */
+.resturantsgallery h1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-top: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: var(--white);
+  padding-left: 20px;
+  height: auto;
+  width: auto;
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container>div img {
+  height: 400px;
+  width: 350px;
+  padding-top: 5px;
+
+}
+
+.CustomerReviews {
+  text-align: center;
+  padding-top: 30px;
+
+  font-family: 'Merriweather', serif;
+  background-color: #EDF2F8;
+}
+
+/* media query using    */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding-left: 0;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .flex-container .image img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .flex-container .text {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .text .menu {
+    margin-left: 0;
+  }
+
+  .descriptionsection {
+    flex-direction: column;
+  }
+
+  .descriptionsection .box {
+    width: 100%;
+  }
+
+  .over {
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .boximage {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Footer {
+    flex-direction: column;
+  }
+
+  .fobox {
+    width: 100%;
+   
+  }
+
+  .box-contents {
+    text-align: center;
+  }
+
+  .box-contents ul {
+    padding-left: 0;
+  }
+
+  .box-contents li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .box-contents i {
+    margin-left: 0;
+  }
+
+  .box-contents p {
+    margin-top: 10px;
+  }
+
+  .flex-containers {
+    flex-direction: column;
+  }
+
+  .flex-containers .chef1,
+  .chef2,
+  .chef3,
+  .chef4,
+  .chef5 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;}
+    .chef2,
+    .chef3,
+    .chef4,
+    .chef5 {
+      height: 500px;
+    }
+.flexresturants{
+  height: 2700px;
+  flex-direction: column;
+}
+  .imgres {
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-left: 0%;
+  }
+
+  .textandexp {
+    width: 100%;
+    height: auto;
+    margin-top: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+.readmore{
+align-items: center;
+  margin-top: 0px;
+float: right;
+margin-right: 150px;
+}
+  .row {
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .readmore {
+    margin-left: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .grid-container>div img {
+    width: 100%;
+    height: auto;
+  }
+  .box4 a{
+    padding: 10px;
+  }
+  .CustomerReviews{
+    margin-top: 1500px;
+  }
+  .grid-container{
+    flex-direction: column;
+  }
+}
+

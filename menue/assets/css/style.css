@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.main1 {
+    width: 100%;
+    max-width: 1405px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+    font-weight: 800;
+}
+
+.menues {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-colums {
+    width: 100%;
+    max-width: 31%;
+    margin-bottom: 40px;
+}
+
+.menu-colums h4 {
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.singlemenue {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.singlemenue img {
+    border-radius: 50%;
+    margin-right: 15px;
+    max-width: 110px;
+    border: 1px dashed #ddd;
+    padding: 3px;
+    transition: transform 0.3s;
+}
+
+.singlemenue .meneu-contain {
+    flex: 1 1 auto;
+}
+
+.singlemenue .meneu-contain h5 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px dashed #222;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.singlemenue .meneu-contain h5 span {
+    color: tomato;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.menuemore {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.menuemore button {
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-colums {
+        max-width: 48%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .menu-colums {
+        max-width: 31%;
+    }
+}
+
+.singlemenue {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.singlemenue img {
+    border-radius: 50%;
+    margin-right: 15px;
+    max-width: 110px;
+    border: 1px dashed #ddd;
+    padding: 3px;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .menues {
+        flex-direction: column;
+    }
+
+    .menu-colums {
+        width: 100%;
+        max-width: 100%;
+    }
+}
